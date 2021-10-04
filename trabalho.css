@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+#image1{
+    max-width: 100%;
+    height: auto;
+}
+nav{
+    font-family: "Merriweather";
+    display: flex;
+    background-color: darkblue;
+    justify-content: space-between;
+    max-height: 50px;
+    padding: 0 20px 0 0;
+}
+nav :hover{
+    color: rgba(134, 134, 134, 0.89);
+}
+body{
+    padding: 0;
+    margin: 0;   
+}
+.contents{
+    color: white;
+    display: flex;
+}
+ul{
+    cursor:pointer;
+}    
+.logo{
+    width: 60px;
+    margin:9px 0px 0px 0px;
+}
+.image{
+    position: relative;
+    width: 250px;
+}
+.image__img{
+    display: block;
+    width: 100%;
+}
+.image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0, 0, 0.6);
+    color:#ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image__overlay:hover{
+    opacity: 1;
+}
+.image__overlay:hover >*{
+    transform: translateY(0);
+}
+.image__overlay > *{
+    transform: translateY(20px);
+    transition: transform, 0.25s;
+}
+.mother{
+    display: flex;
+    justify-content: space-around;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+#ph2{
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hdois{
+    background-color: darkblue;
+    position:static;
+    height: 45px;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    background-color: rgba(0, 68, 255, 0.116);
+}
+header{
+    background-color: rgba(0, 68, 255, 0.116);
+}
